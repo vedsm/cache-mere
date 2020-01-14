@@ -11,8 +11,8 @@ install:
 test:
 	echo "testing"
 
-run:
-	uvicorn --host 0.0.0.0 --port 5000 src.serving.server:app
+run_event_receiver:
+	uvicorn --host 0.0.0.0 --port 5000 src.event_receiving.event_receiver:app
 
 package:
 	echo "to create a docker build/ python package/code artefacts"
