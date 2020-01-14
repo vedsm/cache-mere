@@ -1,0 +1,12 @@
+version: '3'
+services:
+  beer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: veddev/cache-mere:latest
+    environment:
+      - BUILD_ENV=dev
+    ports:
+      - 5000:5000
+    # command: /bin/bash -c "sleep 7 && python3 app.py"

@@ -5,14 +5,14 @@ create_env:
 activate_env:
 	source ./venv/bin/activate
 
-install_training_requirements:
+install:
 	pip3 install -r ./requirements.txt
 
 test:
 	echo "testing"
 
-serve:
-	python3 ./src/serving/server.py
+run:
+	uvicorn --host 0.0.0.0 --port 5000 src.serving.server:app
 
 package:
 	echo "to create a docker build/ python package/code artefacts"
