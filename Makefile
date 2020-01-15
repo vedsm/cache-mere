@@ -12,7 +12,8 @@ test:
 	echo "testing"
 
 run_event_generator:
-	echo "TODO: generate some events and push to to recever"
+	echo "generate some events and push to to recever"
+	python ./src/event_generating/event_generator.py
 
 run_event_receiver:
 	uvicorn --host 0.0.0.0 --port 5000 src.event_receiving.event_receiver:app

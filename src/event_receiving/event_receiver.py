@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from starlette.responses import Response, JSONResponse
+from pydantic import BaseModel
+
 
 import logging
 import json
@@ -22,7 +24,6 @@ def read_root():
 def health():
     return {"status": "ok"}
 
-from pydantic import BaseModel
 class BodyData(BaseModel):
     msg: dict # = {"lat":17.385044, "lon": 78.486671, "malaria": 1, "violence": 0, "litchi": 0}
 
@@ -45,5 +46,6 @@ def event_published(
         log.error("No msg found in the request body")
         return JSONResponse(
             status_code=422,
+            content="No msg found in the request body"
         )
 

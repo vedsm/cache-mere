@@ -6,7 +6,7 @@ import json
 
 
 if __name__ == "__main__":
-    print("Starting event processing")
+    print("Starting event reading")
     event_processor = EventProcessor()
     event_broker_subscriber = EventBrokerSubscriber()
     while True:
