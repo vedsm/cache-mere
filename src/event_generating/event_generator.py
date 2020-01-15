@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print("Starting to generate events. TODO; ingest more type of events")
     # event_publisher = EventPublisher()
 
-    with open('./src/event_generating/data/disease_events.json') as f:
+    with open('./src/event_generating/data/dummy_events.json') as f:
         events_data = json.load(f)
     # print(events_data)
 
