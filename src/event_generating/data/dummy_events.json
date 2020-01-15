@@ -1,35 +1,32 @@
 [
     {
-        "lat":17.385044,
-        "lon": 78.486671,
-        "country": "India",
-        "state": "Telangana",
-        "city": "Hyderabad",
-        "locality": "Madhavpura",
-        "malaria": 1,
-        "violence": 0,
-        "litchi": 0
+        "TS":"2020-01-20T20:11:03.411155",
+        "LAT":17.385044,
+        "LON": 78.486671,
+        "COUNTRY": "India",
+        "PINCODE": "500084",
+        "MALARIA": 1,
+        "VIOLENCE": 0,
+        "LITCHI": 0
     },
     {
-        "lat":17.385044,
-        "lon": 78.486671,
-        "country": "India",
-        "state": "Telangana",
-        "city": "Hyderabad",
-        "locality": "Madhavpura",
-        "malaria": 1,
-        "violence": 0,
-        "litchi": 0
+        "TS":"2020-01-16T20:11:03.411155",
+        "LAT":17.385044,
+        "LON": 78.486671,
+        "COUNTRY": "India",
+        "PINCODE": "500084",
+        "MALARIA": 0,
+        "VIOLENCE": 1,
+        "LITCHI": 0
     },
     {
-        "lat":17.385044,
-        "lon": 78.486671,
-        "country": "India",
-        "state": "Telangana",
-        "city": "Hyderabad",
-        "locality": "Madhavpura",
-        "malaria": 1,
-        "violence": 0,
-        "litchi": 0
+        "TS":"2020-01-17T20:11:03.411155",
+        "LAT":17.385044,
+        "LON": 78.486671,
+        "COUNTRY": "India",
+        "PINCODE": "500084",
+        "MALARIA": 0,
+        "VIOLENCE": 0,
+        "LITCHI": 1
     }
 ]
