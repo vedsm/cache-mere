@@ -2,6 +2,10 @@
     {
         "lat":17.385044,
         "lon": 78.486671,
+        "country": "India",
+        "state": "Telangana",
+        "city": "Hyderabad",
+        "locality": "Madhavpura",
         "malaria": 1,
         "violence": 0,
         "litchi": 0
@@ -9,6 +13,10 @@
     {
         "lat":17.385044,
         "lon": 78.486671,
+        "country": "India",
+        "state": "Telangana",
+        "city": "Hyderabad",
+        "locality": "Madhavpura",
         "malaria": 1,
         "violence": 0,
         "litchi": 0
@@ -16,6 +24,10 @@
     {
         "lat":17.385044,
         "lon": 78.486671,
+        "country": "India",
+        "state": "Telangana",
+        "city": "Hyderabad",
+        "locality": "Madhavpura",
         "malaria": 1,
         "violence": 0,
         "litchi": 0
