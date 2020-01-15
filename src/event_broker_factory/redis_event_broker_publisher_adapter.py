@@ -10,4 +10,4 @@ class RedisEventBrokerPublisher():
 
     def publish(self, topic, msg):
         print("Going to publish msg to redis topic", topic, msg)
-        self.r.publish(topic, msg)
+        return self.r.publish(topic, msg)

@@ -11,4 +11,4 @@ class EventBrokerPublisher():
         self.event_broker.connect(self.event_broker_url)
 
     def publish(self, msg):
-        self.event_broker.publish(self.event_broker_topic, msg)
+        return self.event_broker.publish(self.event_broker_topic, msg)

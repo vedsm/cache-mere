@@ -4,4 +4,4 @@ class EventProcessor():
         pass
 
     def process(self, msg):
-        print("going to process message and add store it")
+        print("going to process message and add store it", msg)
