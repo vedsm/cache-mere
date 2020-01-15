@@ -11,8 +11,14 @@ install:
 test:
 	echo "testing"
 
+run_event_generator:
+	echo "TODO: generate some events and push to to recever"
+
 run_event_receiver:
 	uvicorn --host 0.0.0.0 --port 5000 src.event_receiving.event_receiver:app
+
+run_event_reader:
+	python ./src/event_processing/event_reader.py
 
 package:
 	echo "to create a docker build/ python package/code artefacts"
