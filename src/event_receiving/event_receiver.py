@@ -39,7 +39,7 @@ def event_published(
 
         return JSONResponse(
             status_code=200,
-            content=publishing_response,
+            content=str(publishing_response),
         )
     else:
         # log.error("ERROR: {}".format(e))
