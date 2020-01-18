@@ -1,0 +1,18 @@
+version: '3'
+services:
+  postgres:
+    image: mdillon/postgis
+    # volumes:
+    #   - /externaldrive/postgres-data:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_DB: ai_coe
+      POSTGRES_USER: ai_coe_user
+      POSTGRES_PASSWORD: immigrant_song123
+    ports:
+      - 5432:5432
+
+networks:
+  default:
+    external:
+      name: dev_network

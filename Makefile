@@ -11,6 +11,13 @@ install:
 test:
 	echo "testing"
 
+flush_db:
+	redis-cli flushall
+
+run_event_preparer:
+	echo "Prepare the data which is going to be pushed"
+	python ./src/event_generating/utils/data_preparer.py
+
 run_event_generator:
 	echo "generate some events and push to to recever"
 	python ./src/event_generating/event_generator.py
