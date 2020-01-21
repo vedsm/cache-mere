@@ -11,7 +11,6 @@ import json
 
 app = FastAPI()
 log = logging.getLogger("app")
-event_publisher = EventPublisher()
 
 @app.get("/")
 def read_root():
@@ -23,7 +22,7 @@ def health():
     return {"status": "ok"}
 
 class BodyData(BaseModel):
-    ts: string
+    since_when: str
     lat: float
     lon: float
     tags: list
@@ -33,8 +32,6 @@ class BodyData(BaseModel):
 def please_find_it(
     body_data: BodyData
     ):
-    # return {"status": "ok", "msg": msg}
-    msg = body_data.msg
     log.info("An event is received on REST API: {}".format(body_data))
 
     return JSONResponse(

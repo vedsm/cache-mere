@@ -28,6 +28,9 @@ run_event_receiver:
 run_event_reader:
 	python ./src/event_processing/event_reader.py
 
+run_find_it:
+	uvicorn --host 0.0.0.0 --port 5001 src.client.find_client:app
+
 package:
 	echo "to create a docker build/ python package/code artefacts"
 	docker-compose -f ./docker-compose.yml build
