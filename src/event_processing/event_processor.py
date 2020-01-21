@@ -43,22 +43,23 @@ class EventProcessor():
         tags.append(objects[r.randint(0,10)])
         tags.append(objects[r.randint(0,10)])
         tags.append(objects[r.randint(0,10)])
+        
         return tags
 
 
     def process(self, msg):
         print("Going to process message and and store it", msg)
-        print(float(msg["LON"]), float(msg["LAT"]), msg["CCTV_ID"])
-        print(type(float(msg["LON"])), type(float(msg["LAT"])), msg["CCTV_ID"])
+        # print(float(msg["LON"]), float(msg["LAT"]), msg["CCTV_ID"])
+        # print(type(float(msg["LON"])), type(float(msg["LAT"])), msg["CCTV_ID"])
         try:
             self.r.geoadd("CCTV_LOCATION", float(msg["LON"]), float(msg["LAT"]), msg["CCTV_ID"])
             msg["TAGS"] = self.get_objects_in_image(msg.get("IMAGE", ""))
-            print("Going to store this in search", msg)
+            # print("Going to store this in search", msg)
 
             doc_unique_key = msg["CCTV_ID"] + "_" + msg["TS"]
 
 
-            self.client.add_document('doc_unique_key', CCTV_ID = doc_unique_key, TAGS = msg["TAGS"])
+            self.client.add_document(doc_unique_key, CCTV_ID = doc_unique_key, TAGS = ",".join(msg["TAGS"]))
 
 
 
