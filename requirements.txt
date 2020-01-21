@@ -3,3 +3,4 @@ uvicorn
 requests
 redis
 psycopg2
+redisearch
