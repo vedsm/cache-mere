@@ -21,7 +21,7 @@ if __name__ == "__main__":
     print("Going to prepare data")
     # event_publisher = EventPublisher()
 
-    events_data = read_json('./src/event_generating/data/disease_events.json')
+    events_data = read_json('./src/event_generating/data/camera_desc.json')
     # print sorted(lis, key = lambda i: i['age']) 
     # print sorted(lis, key = lambda i: (i['age'], i['name'])) 
     events_data = sorted(events_data, key = lambda i: i['TS']) 

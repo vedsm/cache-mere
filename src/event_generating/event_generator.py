@@ -22,4 +22,4 @@ if __name__ == "__main__":
     # event_publisher = EventPublisher()
 
     # read_file_and_send_events('./src/event_generating/data/dummy_events.json')
-    read_file_and_send_events('./src/event_generating/data/disease_events.json')
+    read_file_and_send_events('./src/event_generating/data/camera_desc.json')
